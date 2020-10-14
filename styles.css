@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Assistant:400,700);
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: margin 200ms ease;
+    -moz-transition: margin 200ms ease;
+    -o-transition: margin 200ms ease;
+    transition: margin 200ms ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    color: #444444;
+    font-size: 16px;
+}
+
+.container {
+    line-height: 1.5em;
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+h1, h2 {
+    float: right;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+h2 {
+    float: left;
+    font-size: 1.5em;
+}
+
+header:before,
+header:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+header:after {
+    clear: both;
+}
+
+header {
+    *zoom: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background: #ffffff;
+}
+
+th {
+    background: #3c7d37;
+    color: #ffffff;
+}
+
+td, th {
+    padding: 1em 1em;
+    text-align: right;
+    vertical-align: top;
+}
+
+#transData tr.active td {
+    background: #ffff75;
+}
+
+tbody th {
+    background: #2ea879;
+}
+
+tbody tr:nth-child(2n-1) {
+    background: #f1fff1;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+tbody tr:hover {
+    background-color: #ffffbf;
+}
+
+.link, .name {
+    width: 20%;
+}
+
+.now, .time, .total {
+    width: 10%;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 640px) {
+    .time {
+        display: none;
+    }
+    h1, h2 {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .link {
+        display: none;
+    }
+}
+
+/*    h1, h2 {*/
+/*        float: none;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    h2 {*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    thead {*/
+/*        display: none;*/
+/*    }*/
+
+/*    tr {*/
+/*        margin: 0.75em 0.25em;*/
+/*        border-top: 3px solid #3c7d37;*/
+/*        -webkit-box-shadow: 0 1px 1px 0 #717171;*/
+/*        -moz-box-shadow: 0 1px 1px 0 #717171;*/
+/*        box-shadow: 0 1px 1px 0 #717171;*/
+/*    }*/
+
+/*    td, tr {*/
+/*        display: block;*/
+/*        position: relative;*/
+/*    }*/
+
+/*    tr:before {*/
+/*        !*content: "";*!*/
+/*        width: 50%;*/
+/*        background: #f1fff1;*/
+/*        height: 100%;*/
+/*        position: absolute;*/
+/*    }*/
+
+/*    tbody tr:nth-child(2n-1) {*/
+/*        background: transparent;*/
+/*    }*/
+
+/*    tbody tr:hover {*/
+/*        background-color: #ffffbf;*/
+/*    }*/
+
+/*    .link, .name, .time, .total {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .link:before, .name:before, .time:before, .total:before {*/
+/*        font-weight: bold;*/
+/*        display: block;*/
+/*        right: 1em;*/
+/*        position: absolute;*/
+/*    }*/
+
+/*    .link:before {*/
+/*        content: "לינק: ";*/
+/*    }*/
+
+/*    .name:before {*/
+/*        content: "שם המשתף: ";*/
+/*    }*/
+
+/*    .time:before {*/
+/*        content: "Location: ";*/
+/*    }*/
+
+/*    .total:before {*/
+/*        content: 'סה''כ: ";*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (max-width: 430px) {*/
+/*    tr:before {*/
+/*        width: 15%;*/
+/*    }*/
+
+/*    .link:before, .name:before, .time:before, .total:before {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
