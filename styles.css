@@ -93,7 +93,7 @@ tbody tr:hover {
     width: 20%;
 }
 
-.now, .time, .total {
+.time, .total {
     width: 10%;
     text-align: center;
 }
@@ -104,8 +104,11 @@ tbody tr:hover {
 
 
 @media screen and (max-width: 640px) {
-    .time {
+    .time, .link {
         display: none;
+    }
+    .name, .total {
+        width: 50%;
     }
     h1, h2 {
         float: none;
@@ -113,11 +116,6 @@ tbody tr:hover {
     }
 }
 
-@media screen and (max-width: 460px) {
-    .link {
-        display: none;
-    }
-}
 
 /*    h1, h2 {*/
 /*        float: none;*/
